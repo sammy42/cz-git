@@ -152,7 +152,7 @@ export function generateMessage(answers: Answers,
   const subject = addSubject(answers.subject, colorize, options.themeColorCode)
 
   const defaultHeader
-    = `${`${addEmoji(emoji, 'left', options.emojiAlign)}${type}${scope ? `(${scope})` : ''}${markBreaking}`
+    = `${`${addEmoji(emoji, 'left', options.emojiAlign)}[${type}]${scope ? `${scope.toUpperCase()}` : ''}${markBreaking}`
       }: ${addEmoji(emoji, 'center', options.emojiAlign)}${subject}${addEmoji(emoji, 'right', options.emojiAlign)}`
 
   const body = wrap(answers.body ?? '', wrapOptions)
