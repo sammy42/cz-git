@@ -27,6 +27,7 @@
 
 # [1.7.0](https://github.com/Zhengqbbb/cz-git/compare/v1.6.2...v1.7.0) (2023-07-09)
 
+
 ### Bug Fixes
 
 * windows system is unable to load the global configuration ([#133](https://github.com/Zhengqbbb/cz-git/issues/133)) ([d09fee4](https://github.com/Zhengqbbb/cz-git/commit/d09fee4c985efaa93f3282b237dd3de5747f173d)), closes [#132](https://github.com/Zhengqbbb/cz-git/issues/132)
@@ -164,6 +165,7 @@
 Co-authored-by: [Chris](https://github.com/chrisbbreuer)
 
 
+
 ## [1.3.12](https://github.com/Zhengqbbb/cz-git/compare/v1.3.11...v1.3.12) (2022-10-21)
 
 
@@ -176,10 +178,7 @@ Co-authored-by: [Chris](https://github.com/chrisbbreuer)
 
 * **plugin-loader:** add `cz.config.cjs` config profiles ([#73](https://github.com/Zhengqbbb/cz-git/issues/73)) ([a915085](https://github.com/Zhengqbbb/cz-git/commit/a915085ffe6f0caa5ad08e68ec33231373ccb76e))
 
-### ⚠ BREAKING CHANGES
 
-- **plugin-loader**: remove `.cz.js` default loaded configure file
-The configuration items. see: [Configure Template](https://cz-git.qbb.sh/config/)
 
 ## [1.3.11](https://github.com/Zhengqbbb/cz-git/compare/v1.3.10...v1.3.11) (2022-08-21)
 
@@ -204,12 +203,8 @@ The configuration items. see: [Configure Template](https://cz-git.qbb.sh/config/
 ### Features
 
 * **cli:** add `git-czg` git enter command ([de4d7ed](https://github.com/Zhengqbbb/cz-git/commit/de4d7ed18b5329cdf2424a06bb5134dc86481f99))
-  * Can use `git czg` to start `czg` CLI
 * **cli:** optimize czg `retry` option cache error message ([#48](https://github.com/Zhengqbbb/cz-git/issues/48)) ([757517b](https://github.com/Zhengqbbb/cz-git/commit/757517bdef0a07dae07b040760d71b364e2a80d0))
-* **cz-git,cli:** optimize the prompt msg when `alias` undefined ([40bd1a2](https://github.com/Zhengqbbb/cz-git/commit/40bd1a2d4e66617034f516d448a7158b52f4abde))
 
-### Other
-* **site**: the website move to [https://cz-git.qbb.sh/](https://cz-git.qbb.sh/)
 
 
 ## [1.3.9](https://github.com/Zhengqbbb/cz-git/compare/v1.3.8...v1.3.9) (2022-07-01)
@@ -219,11 +214,7 @@ The configuration items. see: [Configure Template](https://cz-git.qbb.sh/config/
 
 * **cli:** add `czg --alias` can directly submit the defined commit message ([ea7423d](https://github.com/Zhengqbbb/cz-git/commit/ea7423d3060d464bf36f11b7baede71f50e1da20)), closes [#43](https://github.com/Zhengqbbb/cz-git/issues/43)
 * **cz-git:** add `alias` option can directly submit the defined commit message ([692a582](https://github.com/Zhengqbbb/cz-git/commit/692a582c9ca2836a488248505ed29bbc0f265a47)), closes [#43](https://github.com/Zhengqbbb/cz-git/issues/43)
-
-  **See**: https://cz-git.qbb.sh/recipes/alias.html
 * **cz-git:** add `emojiAlign` custom setting emoji header location ([ab23be2](https://github.com/Zhengqbbb/cz-git/commit/ab23be25db57da98c85c25a79d701a58c6a4472f)), closes [#43](https://github.com/Zhengqbbb/cz-git/issues/43)
-
-  **See**: https://cz-git.qbb.sh/config/show.html#emojialign
 
 
 
@@ -250,13 +241,8 @@ The configuration items. see: [Configure Template](https://cz-git.qbb.sh/config/
 
 ### Features
 
-* **cli:** add `czg` CLI as cz-git minimal startup scheme ([7d9dc15](https://github.com/Zhengqbbb/cz-git/commit/7d9dc15de97ccf9f890a10c37811546165539de9)), closes [#37](https://github.com/Zhengqbbb/cz-git/issues/37)
-
-  See: https://cz-git.qbb.sh/cli/
-
+* **cli:** `czg` cli add core commit msg ([7d9dc15](https://github.com/Zhengqbbb/cz-git/commit/7d9dc15de97ccf9f890a10c37811546165539de9)), closes [#37](https://github.com/Zhengqbbb/cz-git/issues/37)
 * **cz-git:** add `markBreakingChangeMode` options to add extra prompt ([da4b624](https://github.com/Zhengqbbb/cz-git/commit/da4b6245a139ac240d3f64d2ba4c052bee8c015a)), closes [#38](https://github.com/Zhengqbbb/cz-git/issues/38)
-
-  See: https://cz-git.qbb.sh/recipes/breakingchange.html
 
 
 ### Performance Improvements
@@ -271,15 +257,7 @@ The configuration items. see: [Configure Template](https://cz-git.qbb.sh/config/
 
 ### Features
 
-* **cz-git:** optimize scope list for empty [#35](https://github.com/Zhengqbbb/cz-git/pull/35) ([#34](https://github.com/Zhengqbbb/cz-git/issues/34)) ([4a38b92](https://github.com/Zhengqbbb/cz-git/commit/4a38b9282267d4eabbe49ec60cffcab9e85e1464))
-
 * **cz-git:** add defaultFooterPrefix provide custom footer  prefix ([90f473b](https://github.com/Zhengqbbb/cz-git/commit/90f473b2ad49645adf6d11480a5b90c99228f642))
-
-### Refactor
-
-* **site**: new website deploy | use vitepress ([d2a310e](https://github.com/Zhengqbbb/cz-git/commit/d2a310ec8b4769d61017654e6b06879d44218a34))
-
-see: https://cz-git.qbb.sh/ 
 
 
 
@@ -306,16 +284,11 @@ see: https://cz-git.qbb.sh/
 * **plugin-loader:** support function option and can custom define config path ([4db5914](https://github.com/Zhengqbbb/cz-git/commit/4db5914c11317ed0e5493501666e09816b56d12b)), closes [#30](https://github.com/Zhengqbbb/cz-git/issues/30)
 
 
+### Reverts
 
-```bash
-$ npm i -D cz-git
+* revert code ([d081ad7](https://github.com/Zhengqbbb/cz-git/commit/d081ad752b91afa048492eae94724b5e2c198d1a))
 
-+ cz-git@1.3.2
-added 1 package from 1 contributor and audited 1 package in 0.461s
 
-$ du -sh ./node_modules
-1.7M ./node_modules/cz-git/
-```
 
 ## [1.3.2](https://github.com/Zhengqbbb/cz-git/compare/v1.3.1...v1.3.2) (2022-05-21)
 
@@ -332,29 +305,10 @@ $ du -sh ./node_modules
 
 * :zap: update tsup bundle build cz-git ([0e15e1c](https://github.com/Zhengqbbb/cz-git/commit/0e15e1c3f29dc2d1fc7fc47598df6ecc9d8f7eff))
 
-```bash
-$ npm i -D cz-git
-
-+ cz-git@1.3.2
-added 1 package from 1 contributor and audited 1 package in 0.47s
-
-$ du -sh ./node_modules
-1.8M ./node_modules/cz-git/
-```
-
 
 
 ## [1.3.1](https://github.com/Zhengqbbb/cz-git/compare/v1.3.0...v1.3.1) (2022-05-14)
 
-```bash
-$ npm i -D cz-git
-
-+ cz-git@1.3.1
-added 1 package from 1 contributor and audited 1 package in 0.611s
-
-$ du -sh ./node_modules
-5.6M ./node_modules/cz-git/
-```
 
 ### Bug Fixes
 
@@ -440,6 +394,7 @@ $ du -sh ./node_modules
 * **cz-git:** fix getSingleParams use error param ([3c32415](https://github.com/Zhengqbbb/cz-git/commit/3c32415359bf0b4d490d51f4eb411f1e59d606bc))
 
 
+
 ## [1.2.5](https://github.com/Zhengqbbb/cz-git/compare/v1.2.4...v1.2.5) (2022-04-23)
 
 
@@ -506,10 +461,7 @@ $ du -sh ./node_modules
 
 # [1.2.0](https://github.com/Zhengqbbb/cz-git/compare/v1.1.8...v1.2.0) (2022-03-06)
 
-
-### Features
-
-* **guide:** done cz-git website page and guide document ([941bbe7](https://github.com/Zhengqbbb/cz-git/commit/941bbe7154c6141d4852dd97110f66ec64c32873)), closes [#4](https://github.com/Zhengqbbb/cz-git/issues/4)
+**Note:** Version bump only for package cz-git
 
 
 
@@ -527,7 +479,12 @@ $ du -sh ./node_modules
 
 * **cz-git:** can see the config: https://github.com/Zhengqbbb/cz-git/blob/main/.commitlintrc.js
 
+
+
+
+
 ## [1.1.7](https://github.com/Zhengqbbb/cz-git/compare/v1.1.6...v1.1.7) (2022-03-03)
+
 
 ### Features
 
@@ -580,7 +537,6 @@ $ du -sh ./node_modules
 
 
 ### [1.1.1](https://github.com/Zhengqbbb/cz-git/compare/v1.1.0...v1.1.1) (2022-02-28)
-
 
 ### Bug Fixes
 

@@ -10,12 +10,9 @@
     <a target="_blank" href="https://github.com/commitizen/cz-cli#adapters">
       <img style="display:inline-block;margin:0.2em;" alt="Commitizen-Adapter" src="https://img.shields.io/badge/Commitizen-Adapter-red.svg?logo=git&style=flat">
     </a>
-    <a target="_blank" href="https://cz-git.qbb.sh/cli/">
-      <img style="display:inline-block;margin:0.2em;" alt="CLI-Link" src="https://img.shields.io/badge/Commitizen-CLI-red.svg?logo=git&style=flat">
-    </a>
     <br/>
     <a target="_blank" href="http://commitizen.github.io/cz-cli/">
-      <img style="display:inline-block;margin:0.2em;" alt="commitizen-friendly" src="https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?logo=github">
+      <img style="display:inline-block;margin:0.2em;" alt="commitizen-friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?logo=github">
     </a>
     <a target="_blank" href="https://github.com/Zhengqbbb/cz-git">
       <img style="display:inline-block;margin:0.2em;" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhengqbbb/cz-git?style=social">
@@ -25,16 +22,10 @@
     </a>
     <br>
     <a href="https://www.npmjs.com/package/cz-git">
-        <img style="display:inline-block;margin:0.2em;" alt="npm-download" src="https://img.shields.io/npm/dm/cz-git.svg?color=blue&style=flat-square&logo=npm&label=cz-git">
         <img style="display:inline-block;margin:0.2em;" alt="npm" src="https://img.shields.io/npm/v/cz-git?style=flat-square&logo=npm">
-    </a>
-    <a href="https://www.npmjs.com/package/czg">
-        <img style="display:inline-block;margin:0.2em;" alt="npm-download" src="https://img.shields.io/npm/dm/czg.svg?color=blue&style=flat-square&logo=npm&label=czg">
+        <img style="display:inline-block;margin:0.2em;" alt="npm-download" src="https://img.shields.io/npm/dm/cz-git.svg?style=flat-square&logo=npm">
     </a>
     <br/>
-    <a href="https://formulae.brew.sh/formula/czg">
-        <img style="display:inline-block;margin:0.2em;" alt="homebrew" src="https://img.shields.io/homebrew/v/czg?style=flat-square&logo=homebrew&label=homebrew-czg">
-    </a>
 </p>
 
 <p align="center">
@@ -44,23 +35,21 @@
     &nbsp; | &nbsp;
     <a href="https://cz-git.qbb.sh">Website</a>
     &nbsp; | &nbsp;
-    <a href="https://cz-git.qbb.sh/cli/">CLI</a>
-    <br/>
     <a href="https://cz-git.qbb.sh/zh/">简体中文文档</a>
 </p>
 
 ## Introduction
 
-Support OpenAI, and more engineered, lightweight, customizable, standard output format [Commitizen adapter](https://cz-git.qbb.sh/guide/introduction) and [Git commit CLI](https://cz-git.qbb.sh/cli/).
+A support OpenAI, and more engineered, lightweight, customizable, standard output format [commitizen](https://github.com/commitizen/cz-cli) adapter.
 
-![demo-gif](https://user-images.githubusercontent.com/40693636/188255006-b9df9837-4678-4085-9395-e2905d7ec7de.gif)
+![demo-gif](https://user-images.githubusercontent.com/40693636/165576782-a9339182-df7e-4185-aacc-212f62850f36.gif)
 
 > **What is commitizen**: A Node.js-based `git commit` command-line tool that assists in generating standardized commit messages. <br><br>
 > **What is an adapter**: Replace the **interactive** plugin for the commitizen command line tool.
 
 ## Feature
 
-- 🤖 **OpenAI support.** Let the AI generate your git commit message.
+- 🤖 **OpenAI support.** Let the AI generate your git commit message description.
 - 💪 Just to be a **lazy man** !!! Friendly command line tool, Supports **search and selection** on the command line, reducing spelling errors.
 - ⚡️ **Lightweight**, **Highly Customizable**, but the output format follows the standard [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 - 🔨 [Better for monorepo engineering](https://cz-git.qbb.sh/recipes/#scopes) and **commitlint** project to give relevant verification information to the command line.
@@ -74,12 +63,29 @@ $ npm i -D cz-git
 added 1 package in 0.582s
 ```
 
-[⇒ Why czg](https://cz-git.qbb.sh/cli/why.html)
-```bash
-$ npm i -g czg
-+ czg             (1.5 MB)
-added 1 package in 0.531s
-```
+## Usage
+
+> 「cz-git」 requires Node >=**v12.20**
+
+[⇒ Get Started](https://cz-git.qbb.sh/guide/)
+
+## Configure Template
+
+[⇒ Configure Template](https://cz-git.qbb.sh/config/)
+
+## Options
+
+[⇒ Show Related](https://cz-git.qbb.sh/config/show.html)
+
+[⇒ Engineering Related](https://cz-git.qbb.sh/config/engineer.html)
+
+## Recipes
+
+[⇒ Recipes](https://cz-git.qbb.sh/recipes/)
+
+## FAQ
+
+[⇒ FAQ](https://cz-git.qbb.sh/faq/)
 
 ## Projects using cz-git
 
@@ -152,41 +158,9 @@ added 1 package in 0.531s
   </tr>
 </table>
 
-
-## Get Started
-
-> 「cz-git & czg」 require Node >=**v12.20**
-
-- `cz-git` + [`Commitizen`](https://github.com/commitizen/cz-cli) [⇒ Get Started](https://cz-git.qbb.sh/guide/)
-- `czg` [⇒ Get Started](https://cz-git.qbb.sh/cli/install)
-
-## Configure Template
-
-[⇒ Configure Template](https://cz-git.qbb.sh/config/)
-
-## Options
-
-[⇒ Show Related](https://cz-git.qbb.sh/config/show.html)
-
-[⇒ Engineering Related](https://cz-git.qbb.sh/config/engineer.html)
-
-## Recipes
-
-[⇒ Recipes](https://cz-git.qbb.sh/recipes/)
-
-## FAQ
-
-[⇒ FAQ](https://cz-git.qbb.sh/faq/)
-
 ## LICENSE
 
 MIT
 Copyright (c) 2022-present Qiubin Zheng <zhengqbbb@gmail.com> (https://github.com/Zhengqbbb)
 
 > I just do my best to make thing well, Could you give a [star ⭐](https://github.com/Zhengqbbb/cz-git) to encourage me ?
-
-<a target="_blank" href="https://packagephobia.com/result?p=cz-git,czg">
-  <img src="https://user-images.githubusercontent.com/40693636/252157675-32634902-fc02-4a07-a12c-a07ec5ee5f1a.png" alt="size-overview"><br>
-  <sub>https://packagephobia.com/result?p=cz-git,czg</sub>
-</a>
-
