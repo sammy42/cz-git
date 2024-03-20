@@ -13,9 +13,6 @@ docs/.vitepress/cache
 # Mac OS
 .DS_Store
 
-# Bundle
-lib/
-
 # Typescript build file
 *.tsbuildinfo
 
